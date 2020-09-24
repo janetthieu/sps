@@ -1,0 +1,48 @@
+body {
+    margin: auto;
+    padding: 130px 160px;
+    width: 1100px;
+    font-family: 'Spartan';
+    color: #502050;
+}
+
+h1 {
+    margin: 10px 0;
+    line-height: 1;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: .8rem;
+}
+
+.intro {
+    width: 435px;
+}
+
+.subtitle {
+    line-height: 1.75;
+    font-size: .9rem;
+    color: 	#937b92;
+}
+
+.ratings {
+    font-weight: 700;
+}
+
+.names {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.verified {
+    color: 	#ee68a4;
+}
+
+.testimonials {
+    color: #ffffff;
+}
+
+.attribution {
+    font-size: .7rem;
+}
