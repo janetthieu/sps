@@ -31,10 +31,26 @@ p {
 }
 
 .ratings {
-    border-radius: 10%;
+    border-radius: 10px;
+    padding: 16px;
     width: 400px;
-    background-color: #937b92;
+    background-color: #f7f2f7;
     font-weight: 700;
+    text-align: left;
+}
+
+.testimonials-container {
+    display: grid;
+}
+
+.cards{
+    border-radius: 10px;
+    padding: 40px 35px;
+    width: 350px;
+    background-color: #502050;
+    line-height: 1.75;
+    font-weight: 700;
+    text-align: left;
 }
 
 .names {
@@ -43,10 +59,12 @@ p {
 }
 
 .verified {
+    font-weight: 400;
     color: 	#ee68a4;
 }
 
 .testimonials {
+    font-weight: 400;
     color: #ffffff;
 }
 
