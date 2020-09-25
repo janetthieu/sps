@@ -26,7 +26,14 @@ p {
     color: 	#937b92;
 }
 
+.ratings-container {
+    display: grid;
+}
+
 .ratings {
+    border-radius: 10%;
+    width: 400px;
+    background-color: #ee68a4;
     font-weight: 700;
 }
 
