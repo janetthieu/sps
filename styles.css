@@ -4,6 +4,7 @@ body {
                 url(images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
     background-size: 100vw;
     font-family: 'Spartan';
+    font-size: 2.5rem;
     color: #502050;
     text-align: center;
 }
@@ -14,11 +15,6 @@ h1 {
     line-height: 1;
     font-size: 5rem;
     letter-spacing: -5px;
-}
-
-p {
-    margin: 0;
-    font-size: 2.5vw;
 }
 
 .subtitle {
@@ -41,7 +37,6 @@ p {
     width: 93%;
     background-color: #f7f2f7;
     line-height: 2;
-    font-size: 1.25vw;
     font-weight: 700;
 }
 
