@@ -1,10 +1,10 @@
 body {
-    margin: 60px;
+    margin: auto;
     background: url(images/bg-pattern-top-mobile.svg) no-repeat top left,
                 url(images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
-    background-size: 100vw;
     font-family: 'Spartan';
-    font-size: 2.4rem;
+    line-height: 1.7;
+    font-size: clamp(2rem, 2.4rem, 2.5rem);
     color: #502050;
     text-align: center;
 }
@@ -13,17 +13,25 @@ h1 {
     margin: 220px auto 50px;
     width: 75%;
     line-height: 1;
-    font-size: 5rem;
+    font-size: clamp(4.9rem, 5rem, 5.5rem);
     letter-spacing: -5px;
 }
 
+.content-container {
+    display: block;
+}
+
+.intro {
+    flex: 1;
+}
+
 .subtitle {
-    line-height: 1.6;
     font-size: .91rem;
     color: 	#937b92;
 }
 
 .ratings-container {
+    flex: 1;
     margin: 100px 0 130px;
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -31,17 +39,23 @@ h1 {
 }
 
 .ratings {
+    display: flex;
     margin: auto;
     border-radius: 10px;
-    padding: 30px;
-    width: 93%;
+    padding: 30px 80px;
+    width: 82%;
     background-color: #f7f2f7;
     line-height: 2;
     font-weight: 700;
 }
 
 .stars {
-    letter-spacing: 19px;
+    flex: 1;
+    letter-spacing: 6px;
+}
+
+.company-rated {
+    flex: 1;
 }
 
 .rating-a {
@@ -63,26 +77,27 @@ h1 {
     row-gap: 50px;
 }
 
-.cards {
+[class*="card-"] {
+    margin: auto;
     border-radius: 20px;
     padding: 90px 80px;
     width: 82%;
     background-color: #502050;
-    line-height: 1.75;
     font-weight: 500;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
     text-align: left;
 }
 
 .card-a {
-    grid-row: 1 / 2;
+    grid-row: 1 / 4;
 }
 
 .card-b {
-    grid-row: 2 / 3;
+    grid-row: 2 / 5;
 }
 
 .card-c {
-    grid-row: 3 / 4;
+    grid-row: 3 / 6;
 }
 
 .avatar {
@@ -112,4 +127,86 @@ h1 {
 
 .attribution {
     font-size: .7rem;
+}
+
+@media screen and (min-width: 1440px) {    
+    body {
+        position: relative;
+        margin: 130px auto;
+        background: url(images/bg-pattern-top-desktop.svg) no-repeat top left,
+                    url(images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+        width: 1100px;
+    }
+
+    h1 {
+        margin: 0px;
+        font-size: 3rem;
+        letter-spacing: 1.2; /*being overridden by original h1*/
+    }
+
+    .content-container {
+        display: flex;
+        width: 1100px;
+    }
+
+    .intro {
+        flex: 1;
+        padding-right: 130px;
+        width: 420px;
+        text-align: left;
+    }
+
+    .ratings-container {
+        flex: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        grid-template-columns: 1fr 1fr 350px 1fr 1fr;
+    }
+
+    .ratings {
+        padding: 20px 30px;
+        font-size: .8rem; 
+    }
+
+    .stars {
+        letter-spacing: .5rem;
+    }
+
+    .company-rated {
+        font-size: .9rem;
+    }
+    .rating-a {
+        grid-column: 1 / 4;
+    }
+    
+    .rating-b {
+        grid-column: 2 / 5;
+    }
+    
+    .rating-c {
+        grid-column: 3 / 6;
+    }
+
+    .testimonials-container {
+        flex: 2;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        font-size: 1rem;
+    }
+
+    .card-a {
+        grid-column: 1 / 2;
+    }
+    
+    .card-b {
+        grid-column: 2 / 3;
+    }
+    
+    .card-c {
+        grid-column: 3 / 4;
+    }
 }
