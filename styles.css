@@ -1,5 +1,5 @@
 body {
-    margin: 24px;
+    margin: 18px;
     background: url(images/bg-pattern-top-mobile.svg) no-repeat top left,
                 url(images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
     background-size: 100vw;
@@ -7,7 +7,7 @@ body {
     line-height: 1.7;
     font-family: 'Spartan';
     font-size: .8rem;
-    letter-spacing: 1.1;
+    letter-spacing: .3px;
     color: #502050;
 }
 
