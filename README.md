@@ -14,7 +14,7 @@
  <li>Desktop Screenshot at 1400px:
   <p><img src="design/sps1400px.png" height="600px" title="1400px" alt="Social Proof Section solution screenshot at 1400px">
  </li>
-<ul>
+</ul>
  
 <h3>For more information:</h3>
   <p>Please visit <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="blank">Frontend Mentor: Social proof section challenge</a>
